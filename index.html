@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>Lazy Doc</title>
+
+        <link href="prism.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+        <h1>Lazy Doc</h1>
+
+        <h2>Here Be the Sample Code</h2>
+
+<div id="most-awesome-example">
+    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+</div>
+
+        <h2>Here is the Empty Pre/Code
+
+<pre><code class="lazydoc-trigger language-markup" data-get-code-from="most-awesome-example" ></code></pre>
+
+    </body>
+
+        <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <script src="jquery.lazydoc.js"></script>
+
+        <script>
+            $(document).ready(function() {
+               $(".lazydoc-trigger").lazydoc();
+            });
+        </script>
+        <script src="prism.js"></script>
+
+</html>
