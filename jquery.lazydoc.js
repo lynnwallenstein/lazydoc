@@ -24,6 +24,7 @@
   * ===================== */
 
   $.fn.lazydoc = function ( ) {
+
        return this.each(function(){
 
           var whichItem = $(this).attr("data-get-code-from");
