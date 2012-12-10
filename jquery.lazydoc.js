@@ -24,11 +24,15 @@
   * ===================== */
 
   $.fn.lazydoc = function ( ) {
-      var whichItem = $(this).attr("data-get-code-from");
-      //console.log("I think you wanted " + whichItem);
-      var theContent = $("#" + whichItem)[0].outerHTML;
-      //console.log("So then I went and got " + theContent);
-      $(this).text(theContent);
+       return this.each(function(){
+
+          var whichItem = $(this).attr("data-get-code-from");
+          //console.log("I think you wanted " + whichItem);
+          var theContent = $("#" + whichItem)[0].outerHTML;
+          //console.log("So then I went and got " + theContent);
+          $(this).text(theContent);
+
+        });
   }
 
 }(window.jQuery);
