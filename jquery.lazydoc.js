@@ -1,5 +1,5 @@
 /* ========================================================
- * jquery.lazydoc.js v2.2.4
+ * jquery.lazydoc.js v2.2.5
  * ========================================================
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,9 @@
           //console.log("I think you wanted code from " + whichItem);
           var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
           //console.log("So then I went and got " + theContent);
-          $(this).text(theContent);
+          var trimedContent = $.trim(theContent);
+          //console.log("Let me clean that up for ya! ", trimedContent)
+          $(this).text(trimedContent);
 
         });
   }
