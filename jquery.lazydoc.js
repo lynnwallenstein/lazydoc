@@ -1,5 +1,5 @@
 /* ========================================================
- * jquery.lazydoc.js v2.2.3
+ * jquery.lazydoc.js v2.2.4
  * ========================================================
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
