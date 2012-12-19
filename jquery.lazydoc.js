@@ -27,9 +27,9 @@
 
        return this.each(function(){
 
-          var whichItem = $(this).attr("data-get-code-from");
-          //console.log("I think you wanted " + whichItem);
-          var theContent = $("#" + whichItem)[0].outerHTML;
+          var whichItem = $(this).data("get-code-from");
+          //console.log("I think you wanted code from " + whichItem);
+          var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
           //console.log("So then I went and got " + theContent);
           $(this).text(theContent);
 
