@@ -20,6 +20,23 @@
 
   "use strict"; // jshint ;_
 
+  var trimmer = function trimmer (text) {
+    var i, leadingSpaces, lines, linesLength, match;
+
+    lines = text.split("\n");
+    match = /^(\s)/.exec(lines[0]);
+    if (null == match) {
+      return text;
+    };
+    leadingSpaces = match[1].length;
+
+    for(i=0, linesLength = lines.length; i < linesLength; i++) {
+      lines[i] = lines[i].substring(leadingSpaces - 1);
+    };
+
+    return lines.join("\n");
+  };
+
  /* LAZYDOC PLUGIN DEFINITION
   * ===================== */
 
@@ -31,9 +48,9 @@
           //console.log("I think you wanted code from " + whichItem);
           var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
           //console.log("So then I went and got " + theContent);
-          var trimedContent = $.trim(theContent);
-          //console.log("Let me clean that up for ya! ", trimedContent)
-          $(this).text(trimedContent);
+          var trimmedContent = trimmer($.trim(theContent));
+          //console.log("Let me clean that up for ya! ", trimmedContent)
+          $(this).text(trimmedContent);
 
         });
   }
