@@ -48,7 +48,7 @@
           //console.log("I think you wanted code from " + whichItem);
           var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
           //console.log("So then I went and got " + theContent);
-          var trimmedContent = trimmer($.trim(theContent));
+          var trimmedContent = trimmer(theContent);
           //console.log("Let me clean that up for ya! ", trimmedContent)
           $(this).text(trimmedContent);
 
