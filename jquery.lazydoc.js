@@ -1,5 +1,5 @@
 /* ========================================================
- * jquery.lazydoc.js v2.2.5
+ * jquery.lazydoc.js v2.2.6
  * ========================================================
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,19 +23,31 @@
  /* LAZYDOC PLUGIN DEFINITION
   * ===================== */
 
-  $.fn.lazydoc = function ( ) {
 
-       return this.each(function(){
+  $.fn.lazydoc = function ( options ) {
 
-          var whichItem = $(this).data("get-code-from");
-          //console.log("I think you wanted code from " + whichItem);
-          var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
-          //console.log("So then I went and got " + theContent);
-          var trimedContent = $.trim(theContent);
-          //console.log("Let me clean that up for ya! ", trimedContent)
-          $(this).text(trimedContent);
+    options = $.extend({}, $.fn.lazydoc.defaults, options);
 
-        });
+   return this.each(function(){
+
+      var whichItem = $(this).data("get-code-from");
+      //console.log("I think you wanted code from " + whichItem);
+      //console.log("I think you want " + options.container)
+      if (options.container == 'parent') {
+        var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].innerHTML;
+      } else {
+         var theContent = $('[data-code-source="' + whichItem + '"]').removeAttr('data-code-source')[0].outerHTML;
+      }
+      //console.log("So then I went and got " + theContent);
+      var trimedContent = $.trim(theContent);
+      //console.log("Let me clean that up for ya! ", trimedContent)
+      $(this).text(trimedContent);
+
+    });
+  }
+
+  $.fn.lazydoc.defaults = {
+    container: 'child'
   }
 
 }(window.jQuery);
