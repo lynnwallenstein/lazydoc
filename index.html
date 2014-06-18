@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Lazydoc : " />
 
-<<<<<<< Updated upstream
+
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-=======
-        <link href="bower_components/prism/themes/prism.css" rel="stylesheet" />
->>>>>>> Stashed changes
+    <link href="bower_components/prism/themes/prism.css" rel="stylesheet" />
 
     <title>Lazydoc</title>
   </head>
@@ -23,9 +21,7 @@
           <a id="forkme_banner" href="https://github.com/lynnwallenstein/lazydoc">View on GitHub</a>
 
           <h1 id="project_title">Lazydoc</h1>
-          <h2 id="project_tagline"></h2>
 
-<<<<<<< Updated upstream
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/lynnwallenstein/lazydoc/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/lynnwallenstein/lazydoc/tarball/master">Download this project as a tar.gz file</a>
@@ -35,132 +31,58 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+
       <section id="main_content" class="inner">
-        <h1>
-<a name="lazy-doc" class="anchor" href="#lazy-doc"><span class="octicon octicon-link"></span></a>Lazy Doc</h1>
 
-<h2>
-<a name="here-be-the-sample-code" class="anchor" href="#here-be-the-sample-code"><span class="octicon octicon-link"></span></a>Here Be the Sample Code</h2>
+<h1>Lazy Doc</h1>
 
-<div>
+        <h2>Here Be the Sample Code</h2>
+
+<div data-code-source="most-awesome-example">
     <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 </div>
-=======
-        <div data-code-source="most-awesome-example">
-            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div>
->>>>>>> Stashed changes
 
-<h2>
-<a name="here-is-the-empty-precode" class="anchor" href="#here-is-the-empty-precode"><span class="octicon octicon-link"></span></a>Here is the Empty Pre/Code</h2>
+        <h2>Here is the Empty Pre/Code</h2>
 
-<pre><code>    &lt;pre&gt;&lt;code class="lazydoc-trigger language-markup" data-get-code-from="most-awesome-example" &gt;&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
+        <pre><code class="lazydoc-trigger language-markup" data-get-code-from="most-awesome-example" ></code></pre>
 
-<h2>
-<a name="a-more-complex-example" class="anchor" href="#a-more-complex-example"><span class="octicon octicon-link"></span></a>A More Complex Example</h2>
+        <h2>A More Complex Example</h2>
 
+<form data-code-source="more-complex-example">
+    <input type="text" class="input-small" placeholder="Email">
+    <input type="password" class="input-small" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox"> Remember me
+    </label>
+    <button type="submit" class="btn">Sign in</button>
+</form>
 
-    
-       Remember me
-    
-    Sign in
+        <h2>Here is the Empty Pre/Code</h2>
 
+        <pre><code class="lazydoc-trigger language-markup" data-get-code-from="more-complex-example" ></code></pre>
 
-<h2>
-<a name="here-is-the-empty-precode-1" class="anchor" href="#here-is-the-empty-precode-1"><span class="octicon octicon-link"></span></a>Here is the Empty Pre/Code</h2>
-
-<pre><code>    &lt;pre&gt;&lt;code class="lazydoc-trigger language-markup" data-get-code-from="more-complex-example" &gt;&lt;/code&gt;&lt;/pre&gt;
+    </body>
 
 
-    &lt;!-- Grab Google CDN's jQuery. fall back to local if necessary --&gt;
-    &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+      </section>
 
-    &lt;script src="jquery.lazydoc.js"&gt;&lt;/script&gt;
+    </div>
 
-    &lt;script&gt;
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="jquery.lazydoc.js"></script>
+
+    <script>
         $(document).ready(function() {
            $(".lazydoc-trigger").lazydoc();
         });
-    &lt;/script&gt;
-    &lt;script src="prism.js"&gt;&lt;/script&gt;
-</code></pre>
+    </script>
+    <script src="bower_components/prism/prism.js"></script>
 
-<h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+</body>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<<<<<<< Updated upstream
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-=======
-        <form data-code-source="more-complex-example">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">
-            <label class="checkbox">
-              <input type="checkbox"> Remember me
-            </label>
-            <button type="submit" class="btn">Sign in</button>
-        </form>
->>>>>>> Stashed changes
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<<<<<<< Updated upstream
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-=======
-        <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
->>>>>>> Stashed changes
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-<<<<<<< Updated upstream
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Lazydoc maintained by <a href="https://github.com/lynnwallenstein">lynnwallenstein</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-=======
-        <script>
-            $(document).ready(function() {
-               $(".lazydoc-trigger").lazydoc();
-            });
-        </script>
-        <script src="bower_components/prism/themes/prism.js"></script>
->>>>>>> Stashed changes
-
-    
-
-<<<<<<< Updated upstream
-  </body>
-=======
->>>>>>> Stashed changes
 </html>
