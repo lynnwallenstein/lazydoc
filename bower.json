@@ -1,0 +1,32 @@
+{
+  "name": "jQuery LazyDoc",
+  "version": "3.0.0",
+  "homepage": "https://github.com/lynnwallenstein/lazydoc",
+  "authors": [
+    "Lynn Wallenstein <lynn@lynn.io>"
+  ],
+  "dependencies": {
+          "jquery": "2.1.1",
+          "prism": "https://github.com/LeaVerou/prism.git#gh-pages"
+  },
+  "description": "Copy snippets for Styleguides",
+  "main": "jquery.lazydoc.js",
+  "keywords": [
+    "style guide",
+    "jquery",
+    "documentation"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
